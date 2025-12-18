@@ -1,0 +1,96 @@
+*Sebelum run program, kita harus kompilasi file go-lang dengan cara
+
+go build
+
+
+- setelah itu akan muncul file func main dan namanya akan sesuai dengan modulnya
+
+- muncul lalu run programnya
+
+    ./namafile
+
+========================================
+# atau bisa langsung run programnya
+
+go run namafile.go
+
+*Kita tidak bisa go build dengan banya func main banyak. HARUH SATU MAIN 
+
+#Tahap belajar hiraukan, kita bisa run satu persatu menggunakan go run namafile.go
+
+========================================
+1. Tipe data
+    a. integer
+    b. floating point
+    c. boolean 
+        true = benar
+        false = salah
+    d. string
+        "ini string"
+        function untuk string
+            len("string") => menghitung jumlah karakter di string
+            "string"[number] => mengambil karakter pada posisi yang di tentukan
+
+2. Variable
+    - variable adalah tempat untuk menyimpan data
+    - variable di gunakan agar kita dapat mengakses data yang sama
+    - di golang variable hanya bisa menyimpan tipe data yang sama, jika kita ingin menyimpan data yang berbeda jenis tipe data, kita harus membuat beberapa variable
+    - untuk menggunakannya kita bisa menggunakan var, lalu di ikuti dnegan anma variable lalu typenya
+        => di golang tidak wajib menggunakan var, bisa di ubah menggunakan := (*hanya di gunakan di deklarasi awal jika di ubah jangan di gunakan lagi)
+
+3. Constant
+    - Constant adlah variable yang nilainya tidak bisa di ubah lagi setelah pertamakali deklarasi
+    - boleh tidak di pakai, jika variable WAJIB di gunakan
+
+4. Konversi Tipe data
+    - deklarasi nilai awal lalu type, cara ubahnya tinggal panggil lalu tambahkan tpe yang ingin di ubah
+
+5. Type Declarations
+    - atau bisa disebut juga alias, menggunakan kata type
+
+6. oprasi matematika
+    + => penjumlahan
+    - => pengurangan
+    * => perkalian
+    / => pembagian
+    % => sisa pembagian atau modolus
+
+7. Augmented Assignments
+    a = a + 10    |    a += 10
+    a = a - 10    |    a -= 10
+    a = a * 10    |    a *= 10
+    a = a / 10    |    a -= 10
+    a = a % 10    |    a %= 10
+
+8. Unary Oprator
+    ++ => a = a + 1
+    -- => a = a - 1
+    - => negative
+    + => positive
+    ! => boolean kebalikan
+
+9. Oprasi Perbandingan
+    - Oprasi Perbandingan adalah oprasi untuk membandingkan dua buah data
+    - Oprasi ini akan menghasilkan nilai boolean (benar atau salah)
+
+10. Oprasi boolean
+
+11. Tipe data array
+    - array adlah tipe data yang berisikan kumpulan data dengan tipe yang sama
+    - saat membuat array, kita perlu menentukan jumlah data yang bisa di tampung oleh array tersebut
+    - daya tampung array tidak bisa bertambah
+
+12. Function array
+    len(array) => untuk mendapat panjang array
+    array[index] => mendapat data di posisi index
+    array[index] = value => mengubah data di posisi index
+
+13. Tipe data slice
+    - Tipe data slice adalah potongan dari data array
+    - slice mirip dengna array, yang membedkaan adalah ukuran slice bisa berubah
+    - slide dan array selalu terkoneksi, dimana slice adalah data yang mengakses sebagaian atau sluruh data array
+
+    >> memiliki 3 data pointer, length, dan capacity
+    >> pointer adalah penunjuk data pertama di array para slice
+    >> length adalah panjang dari slice
+    >> capacity adalah kapasitas dari slice, dimana length tidak boleh lebih dari capacity
