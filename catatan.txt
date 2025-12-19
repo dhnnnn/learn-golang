@@ -94,3 +94,44 @@ go run namafile.go
     >> pointer adalah penunjuk data pertama di array para slice
     >> length adalah panjang dari slice
     >> capacity adalah kapasitas dari slice, dimana length tidak boleh lebih dari capacity
+
+14. Tipe data mendapa
+    - map adalah tipe data yang berisikan kumpulan data yang sama, namun kita bisa menentukan tipe jenis data index yang kita gunakan
+    - kumpulan key-value(kata kunci - nilai), dumana kata kunci bersifat unik, tidak boleh sama
+    - jumlah data yang di masukan bisa sebanyak banyaknya, namun untuk indexnya harus berubah
+
+15. If expression
+    - percabangan atau kondisi
+
+16. function
+    - blok kode yang sengaja di buat agar dapat di gunakan secara berulang ulang
+
+17. function return value
+    - untuk memberitahu agar function bisa mengembalikan data atau retrun
+
+18. returning multiple values
+    - harus mendeklarasikan semua tipe data yang di return
+
+19. menghiraukan return value
+    - multiple return wajib di tangkap semua value
+    - jika kita ingin mengabaikan return value tersbut, kita bisa menggunakan tanda _ (garis bawah)
+
+20. variadic function
+    - paramater yang berada di posisi terakhir, memiliki kemampuan di jadikan sebua vargs
+
+21. pointer
+    - golang menggunakan pass by value
+    - pointer adalah kemampuan membuat reference ke lokasi data di memory yang sama, tanpa mendukplikasi data yang sudah ada, jadi kita bisa langsung pass by referance
+
+22. package dan import
+    - package adalah tempat yang digunakan untuk mengorganisir kode program yang kita buat, dengan menggunakan package kita bisa merapihkan kode program yang kita buaat
+    - package hanya direkroti folder
+
+23. access modifier
+    - nama fungsi atau variable menggunakan hruf besar agar bisa di akses di lain package, jika menggunakan huruf kecil bisa namun hanya bisa di pakai di dalam package itu sendiri
+
+24. package initialization
+    - gunakan init kecil semua untuk mengasesnya tanpa memanggil
+
+25. blank package
+    - gunakan blank indentifier (_)
